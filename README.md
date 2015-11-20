@@ -6,5 +6,4 @@ PHP Library for <a href="https://sparesomecoins.com/developer/">SpareSomeCoins A
 <ul>
   <li>PHP &gt;= 5.0+</li>
   <li>PHP cURL extension</li>
-  <li>MYSQL</li>
 </ul>
