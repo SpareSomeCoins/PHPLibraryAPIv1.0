@@ -23,7 +23,6 @@ class SpareSomeAPI
         curl_setopt($ch, CURLOPT_POSTFIELDS, $params);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true); 
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-		curl_setopt($ch, CURLOPT_SSLVERSION,3);
 		curl_setopt($ch, CURLOPT_CAINFO, getcwd() . "/cacert.pem");
         $response = curl_exec($ch);
         curl_close($ch);
