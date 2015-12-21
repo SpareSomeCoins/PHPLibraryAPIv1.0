@@ -30,7 +30,7 @@ class SpareSomeAPI
         return $response;
     }
 
-    public function send($to, $amount, $curName = NULL, $referral = NULL) {
+    public function send($to, $amount, $referral = "false" ) {
         $r = $this->__CURL("send", array("to" => $to, "amount" => $amount, "referral" => $referral));
         $response = json_decode($r, true);
 
